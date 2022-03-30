@@ -1,5 +1,6 @@
 <?php
     $data = date("m-d-Y");
+    echo $data."<br>";
     $partes = explode("-", $data);
     $parte1 = $partes[0];
     $parte2 = $partes[1];
