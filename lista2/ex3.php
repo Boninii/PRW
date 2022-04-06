@@ -1,13 +1,19 @@
 <?php
-    for($i=0; $i<=10; $i++)
+    $cont=0;
+
+    for($i=1; $i<200; $i++)
     {
-        if($i % 2 == 0)
+        for($n=1; $n<$i; $n++)
         {
-            echo "O número ".$i." não é primo!<br>";
+            if($i % $n == 0)
+            {
+                $cont++;
+            }
         }
-        else
-        {
-            echo "O número ".$i." é primo!<br>";
-        }
+        if($cont == 1)
+                {
+                    echo $i."<br>";
+                }
+        $cont=0;
     }
 ?>
