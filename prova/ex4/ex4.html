@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="pt_BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Operações</title>
+            <style>
+                #cor
+                {
+                    color: red;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Validação</h2>
+            <hr>
+            <form method="post" action="ex4.php">
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input name="nome" type="text">
+                </div>
+                <div>
+                    <label for="estado">Estado: </label>
+                        <select name="estado" id="selectEst">
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="cpf">CPF: </label>
+                    <input name="cpf" type="text">
+                </div>
+                <div>
+                    <label for="rg">RG: </label>
+                    <input name="rg" type="text">
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="opcSexo" value="Masculino"> Masculino
+                    <input type="radio" name="opcSexo" value="Feminino"> Feminino
+                </div>
+                <div>
+                    <label for="saldo">Saldo do cartão: </label>
+                    <input name="saldo" type="number">
+                </div>
+                <div>
+                    <label for="tot">Total da compra: </label>
+                    <input name="tot" type="number">
+                </div>
+                <div>
+                    <button  type="submit">Enviar</button>
+                </div>
+            </form>    
+        </body>
+    </html>
