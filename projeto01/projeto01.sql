@@ -14,5 +14,5 @@ create table usuario(
     email_usuario varchar(100) not null,
     telefone_usuario varchar(30) not null,
     primary key (id_usuario)
-    );
+);
     
