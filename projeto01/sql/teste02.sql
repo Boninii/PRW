@@ -7,13 +7,13 @@ INSERT INTO  usuario(nome_usuario, email_usuario, telefone_usuario)
 
 /*
 UPDATE usuario 
-SET nome_usuario = "João", email_usuario = "joao@gmail.com"
-where id_usuario = 6;
+SET id_usuario = 3
+where id_usuario = 8;
 */
 
 /*
 delete from usuario 
-where id_usuario = 7;
+where id_usuario == ?;
 */
 
 SELECT * FROM usuario;
