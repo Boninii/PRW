@@ -4,10 +4,10 @@
     $sql = 'SELECT * FROM usuario';
     //retorna todos os dados para consulta
     $result = mysqli_query($con, $sql);
+    
     //retorna a primeira linha
-    $row = mysqli_fetch_array($result);
-
-    print_r($row);
+    //$row = mysqli_fetch_array($result);
+    //print_r($row);
 ?>
 
 <!DOCTYPE html>
@@ -19,13 +19,13 @@
             <title>Listagem de Usuários</title>
         </head>
         <body>
-            <h1>Listagem de Usuários</h1>
+            <h1 align="center">Listagem de Usuários</h1>
             <table align="center" border="1">
                 <!--LInha-->
-                <tr>
+                <tr align="center">
                     <!--Table-->
                     <th>Código</th>
-                    <th>Nome</th>
+                    <th>Nome</th> 
                     <th>Email</th>
                     <th>Telefone</th>
                 </tr>
