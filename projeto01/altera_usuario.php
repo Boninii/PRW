@@ -16,18 +16,19 @@
         <title>Teste - Aula</title>
     </head>
     <body>
-        <form method="post" action="cadastro_usuario.php">
+        <form method="post" action="altera_usuario_exe.php">
             <h2>Alteração de Usuário</h2>
             <div>
-                Nome: <input type="text" name="textNome" maxlength="50" value="<?php echo $row['nome_usuario'] ?>">
+                Nome: <input type="text" name="nome" maxlength="50" value="<?php echo $row['nome_usuario'] ?>">
             </div>
             <div>
                 E-mail: <input type="email" name="email" maxlength="50" value="<?php echo $row['email_usuario'] ?>">
             </div>
             <div>
-                Telefone: <input type="number" name="fone" maxlength="30" value="<?php echo $row['telefone_usuario'] ?>">
+                Telefone: <input type="text" name="telefone" maxlength="30" value="<?php echo $row['telefone_usuario'] ?>">
             </div>
-            <input type="submit" value="Salvar!">
+            <input type="submit" value="Enviar!">
+            <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
         </form>
     </body>
 </html>
