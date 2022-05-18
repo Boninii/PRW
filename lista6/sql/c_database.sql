@@ -1,4 +1,4 @@
-create database lista6;
+/*create database lista6;
 
 use lista6;
 
@@ -15,4 +15,7 @@ celular varchar(15) not null,
 email varchar(70) not null, 
 dt_cadastro date not null,
 PRIMARY KEY (id_agenda)
-);
+);*/
+
+select * from agenda;
+

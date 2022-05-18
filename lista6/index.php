@@ -10,8 +10,12 @@
             <h1>Menu Principal</h1>
             <div>
                 <ul>
-                    <li><a href="cadastro_usuario.html">Cadastrar Agenda</a></li>
-                    <li><a href="listar_usuarios.php">Listar Agenda</a></li>
+                    <li>
+                        <a href="cadastro_agenda.html">Cadastrar Agenda</a>
+                    </li>
+                    <li>
+                        <a href="listar_agenda.php">Listar Agenda</a>
+                    </li>
                 </ul>
             </div>
         </body>
