@@ -41,6 +41,7 @@
                     while($row = mysqli_fetch_array($result))
                     {
                         echo "<tr>";
+                        $data = explode("-",$row['dt_cadastro']);
                         echo "<td>".$row['id_agenda']."</td>";
                         echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>"
                             .$row['nome']."</a></td>";//pode n ser nome_agenda
@@ -52,7 +53,7 @@
                         echo "<td>".$row['telefone']."</td>";
                         echo "<td>".$row['celular']."</td>";
                         echo "<td>".$row['email']."</td>";
-                        echo "<td>".$row['dt_cadastro']."</td>";
+                        echo "<td>" .$data[2]."/".$data[1]."/".$data[0]."</td>";
                         echo "<td><a href='excluir_agenda.php?id_agenda=".$row['id_agenda']."'>Excluir</a></td>";
                         echo "</tr>";
                     }
