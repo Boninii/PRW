@@ -23,8 +23,7 @@
 
     $sql = "INSERT INTO  agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email, dt_cadastro)
                 VALUES ('".$nome_agenda."', '".$apelido_agenda."', '".$endereco_agenda."', '".$bairro_agenda."', 
-                '".$cidade_agenda."', '".$estado_agenda."', '".$fone_agenda."', '".$celular_agenda."', '".$email_agenda."', 
-                '".$dt_cadastro."')";
+                '".$cidade_agenda."', '".$estado_agenda."', '".$fone_agenda."', '".$celular_agenda."', '".$email_agenda."', '".$dt_cadastro."')";
 
     $result = mysqli_query($con, $sql);
 
@@ -37,3 +36,5 @@
         echo "<br><br>Erro ao inserir o banco de dados: ".mysqli_error($con);
     }
 ?>
+
+<br><br><a href="index.php">Voltar</a>
