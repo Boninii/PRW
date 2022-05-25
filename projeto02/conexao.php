@@ -3,7 +3,7 @@
     $port = 3307;//COLOCAR 3307, NA ESCOLA
     $username = "root";
     $password = "";
-    $database = "projeto01";
+    $database = "projeto02";
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
 
     if(mysqli_connect_error())
