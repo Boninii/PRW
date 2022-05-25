@@ -1,6 +1,6 @@
 <?php
     include('conexao.php');   
-    
+                
     $id_usuario = $_GET['id_usuario'];
     $sql = 'SELECT * FROM usuario WHERE id_usuario ='.$id_usuario;
     $result = mysqli_query($con, $sql);
@@ -16,8 +16,11 @@
         <title>Teste - Aula</title>
     </head>
     <body>
-        <form method="post" action="altera_usuario_exe.php">
+        <form method="post" action="altera_usuario_exe.php" enctype="multipart/form-data">
             <h2>Alteração de Usuário</h2>
+            <?php
+                echo "<img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/>";
+            ?>
             <div>
                 Nome: <input type="text" name="nome" maxlength="50" value="<?php echo $row['nome_usuario'] ?>">
             </div>
@@ -26,6 +29,9 @@
             </div>
             <div>
                 Telefone: <input type="text" name="telefone" maxlength="30" value="<?php echo $row['telefone_usuario'] ?>">
+            </div>
+            <div>
+                <input type="file" id="foto" name="foto" accept="image/*">
             </div>
             <input type="submit" value="Enviar!">
             <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
