@@ -1,4 +1,4 @@
-use projeto01;
+use projeto02;
 /*
 INSERT INTO  usuario(nome_usuario, email_usuario, telefone_usuario)
 	VALUES('Pedro', 'pedro@gmail.com', '0101-0101');
