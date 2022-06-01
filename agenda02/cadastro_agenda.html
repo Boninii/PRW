@@ -7,7 +7,7 @@
             <title>Cadastro - Agenda</title>
         </head>
         <body>
-            <form method="post" action="cadastro_agenda.php">
+            <form method="post" action="cadastro_agenda.php"  enctype="multipart/form-data">
                 <h2>Cadastro de Agendas</h2>        
                 <div>
                     Nome: <input type="text" name="nome" maxlength="50">
@@ -35,6 +35,9 @@
                 </div>
                 <div>       
                     E-mail: <input type="email" name="email" maxlength="50">
+                </div>
+                <div>
+                    <input type="file" id="foto" name="foto" accept="image/*">
                 </div>
                 <input type="submit" value="Enviar">
             </form>

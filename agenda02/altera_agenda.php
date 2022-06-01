@@ -16,8 +16,11 @@
         <title>Alterar a Agenda</title>
     </head>
     <body>
-        <form method="post" action="altera_agenda_exe.php">
+        <form method="post" action="altera_agenda_exe.php" enctype="multipart/form-data">
             <h2>Alteração na Agenda</h2>
+            <?php
+                echo "<img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/>";
+            ?>
             <div>
                 Nome: <input type="text" name="nome" maxlength="50" value="<?php echo $row['nome'] ?>">
             </div>
@@ -44,6 +47,9 @@
             </div>
             <div>
                 E-mail: <input type="email" name="email" maxlength="50" value="<?php echo $row['email'] ?>">
+            </div>
+            <div>
+                <input type="file" id="foto" name="foto" accept="image/*">
             </div>
             <input type="submit" value="Enviar!">
             <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
