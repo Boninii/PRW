@@ -17,4 +17,6 @@ create table usuario(
     foto_nome varchar(100),
     primary key (id_usuario)
 );
+
+-- select * from usuario;
     

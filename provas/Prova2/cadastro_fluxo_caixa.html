@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="pt_BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Prova 2</title>
+        </head>
+        <body>
+            <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data">
+                <h2>Cadastro de Fluxo de caixa </h2>        
+                <div>
+                    Data: 
+                    <input type="date" name="data" maxlength="10">
+                </div>
+                <div>       
+                    Tipo:
+                    <input type="radio" name="opcTipo" value="Entrada"> Entrada
+                    <input type="radio" name="opcTipo" value="Saída"> Saída
+                </div>
+                <div>
+                    Valor: <input type="number" name="valor" maxlength="15">
+                </div>
+                <div>
+                    Histórico: <input type="text" name="historico" maxlength="150">
+                </div>
+                <div>
+                    Cheque:
+                    <select name="cheque">
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </body>
+    </html>

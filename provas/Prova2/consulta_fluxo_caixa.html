@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="pt_BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Prova 2</title>
+        </head>
+        <body>
+            <form method="post" action="consulta_fluxo_caixa.php" enctype="multipart/form-data">
+                <h2>Consulta de Fluxo de caixa</h2>        
+                <div>       
+                    Tipo de consulta:
+                    <input type="radio" name="opcTipo" value="total"> Saldo total
+                    <input type="radio" name="opcTipo" value="saidas"> Total Saídas
+                    <input type="radio" name="opcTipo" value="entradas"> Total entradas
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </body>
+    </html>
