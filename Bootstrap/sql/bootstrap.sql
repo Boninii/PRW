@@ -1,11 +1,11 @@
 -- Drop banco de dados
--- drop database prova2;
-/*
+-- drop database bootstrap;
+
 -- Criação do banco de dados 
-create database prova2;
+create database bootstrap;
 
 -- Selecionar banco de dados 
-use prova2;
+use bootstrap;
 
 drop table if exists fluxo_caixa;
 
@@ -19,5 +19,5 @@ create table fluxo_caixa(
     cheque varchar(3)  not null, 
     primary key (id)
 );
-*/
+
 -- select * from fluxo_caixa;
