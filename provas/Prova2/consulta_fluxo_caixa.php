@@ -3,30 +3,25 @@
 
     $tipo = $_POST['tipo'];
 
-    if($tipo == 'entrada')
+    if($tipo == 'entradas')
     {
-        $sql  = "select sum(valor) valor from fluxo_caixa where tipo = 'entrada'";
-        echo $sql;
+        $sql  = "SELECT SUM(valor) valor FROM fluxo_caixa WHERE tipo = 'entrada'";
     }
-    else if($tipo == 'saida')
+    else if($tipo == 'saidas')
     {
-        $sql  = "select sum(valor) valor from fluxo_caixa where tipo = 'saida'";
+        $sql  = "SELECT SUM(valor) valor FROM fluxo_caixa WHERE tipo = 'saida'";
     }
     else if($tipo == 'total')
     {
-        $sql  = "select sum(case when tipo = 'entrada' then valor else  0 end) - 
-                        sum(case when tipo = 'saida' then valor else 0 end) as valor
-                        from fluxo_caixa";
+        $sql  = "SELECT SUM(CASE WHEN tipo = 'entrada' THEN valor ELSE 0 END) -
+                    SUM(CASE WHEN tipo = 'saida' THEN valor ELSE 0 END) 
+                    AS valor 
+                    FROM fluxo_caixa";
         
     }
     $result = mysqli_query($con, $sql);
-
-    if($result)
-    {
-        echo "Registro excluído com sucesso<br>";
-    }
-    else
-    {
-        echo "Erro ao tentar excluir usuário: ".mysqli_error($con)."<br>";
-    }
+    $row = mysqli_fetch_array($result);
+    echo "Valor: R$".($row['valor']) ;
 ?>
+    
+<br><br><a href="index.php">Voltar</a>
