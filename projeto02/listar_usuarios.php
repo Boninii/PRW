@@ -5,7 +5,7 @@
     //retorna todos os dados para consulta
     $result = mysqli_query($con, $sql);
     
-    //retorna a primeira linha
+    //retorna a primeira linhaa
     //$row = mysqli_fetch_array($result);
     //print_r($row);
 ?>
