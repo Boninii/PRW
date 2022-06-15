@@ -25,5 +25,5 @@
         echo "Erro ao alterar no banco de dados: ".mysqli_error($con)."<br>";
     }
 ?>
-
+<!--Teste-->
 <a href="index.php">Voltar</a>
