@@ -1,6 +1,6 @@
 -- Drop banco de dados
 -- drop database prova2;
-/*
+
 -- Criação do banco de dados 
 create database prova2;
 
@@ -19,5 +19,5 @@ create table fluxo_caixa(
     cheque varchar(3)  not null, 
     primary key (id)
 );
-*/
+
 -- select * from fluxo_caixa;
