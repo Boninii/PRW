@@ -3,3 +3,4 @@
 
     echo $vetor[2]."<br>";
 ?>
+<!--Teste-->
