@@ -9,3 +9,4 @@
      }
      echo "A soma dos número pares de 0 a 100 é de: ".$soma;
 ?>
+<!--Teste-->

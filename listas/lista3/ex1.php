@@ -8,3 +8,4 @@
     echo $frase1;
     echo "<br>"."A variável contém: ".strlen($frase1)." caracteres"."<br>";
 ?>
+<!--Teste-->
