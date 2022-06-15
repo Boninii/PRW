@@ -1,5 +1,5 @@
 <?php
-    $salario = 300;
+    $salario = 400;
     $reajuste = 0;
 
     echo "O salário é de: ".$salario;
