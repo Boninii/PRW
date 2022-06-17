@@ -1,0 +1,111 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html 
+{
+    font-family: "Lucida Sans", sans-serif;
+}
+
+#teste 
+{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form-item
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;    
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+#teste div label 
+{
+    width: 20%;
+    height: 30px;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="date"]
+{
+    width: 100%;
+}
+
+input[type="number"]
+{
+    width: 100%;
+}
+
+input[type="text"]
+{
+    width: 100%;
+}
+
+input[type="radio"]
+{
+    height: 15px;
+}
+
+input[value="Entrada"]
+{
+    position: relative;
+    top: 0px;
+}
+
+label[for="tipo"]
+{
+    position: relative;
+    right: 23%;
+}
+
+input[type="file"]
+{
+    position: relative;
+    right: 13px;
+}
+
+.content-tipo
+{
+    width: 30%;
+    position: relative;
+    left: 14%;
+}
+
+#teste div input 
+{
+    display: block;
+    width: 80%;
+    float: left;
+}
+
+#teste div #btn 
+{
+    width: 100px;
+    margin: 0 auto;
+}
+
+a input#btn
+{
+    position: relative;
+    left: 150px;
+}
+
+#btn:hover
+{
+    background-color: rgb(118, 212, 197);
+}
+
+.form_item
+{
+    margin: 0 auto;
+}

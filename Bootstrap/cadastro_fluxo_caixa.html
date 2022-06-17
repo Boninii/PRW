@@ -9,68 +9,77 @@
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-            <title>Prova 2</title>
+            <link rel="stylesheet" href="css/cadastro_fluxo_caixa.css">
+            <title>Bootstrap</title>
         </head>
         <body>
-            <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data" style="text-align: center;">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#" style="pointer-events: none;">Menu Principal</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="cadastro_fluxo_caixa.html">Cadastro<span class="sr-only">(página atual)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="listar_fluxo_caixa.php">Listagem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="consulta_fluxo_caixa.html">Consulta</a>
-                            </li>
-                            <!--<li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#" style="pointer-events: none;">Menu Principal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cadastro_fluxo_caixa.html">Cadastro<span class="sr-only">(página atual)</span></a>
+                        </li>                            <li class="nav-item">
+                            <a class="nav-link" href="listar_fluxo_caixa.php">Listagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consulta_fluxo_caixa.html">Consulta</a>
+                        </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Ação</a>
-                                    <a class="dropdown-item" href="#">Outra ação</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Algo mais aqui</a>
-                                </div>
-                            </li>-->
-                        </ul>
-                        <!--<form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                        </form>-->
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Ação</a>
+                                <a class="dropdown-item" href="#">Outra ação</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            </div>
+                        </li>-->
+                    </ul>
+                    <!--<form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>-->
+                </div>
+            </nav>     
+            <div id="teste">
+                <form method="post" action="cadastro_fluxo_caixa.php" enctype="multipart/form-data" style="text-align: center;">
+                    <legend>Cadastro</legend>
+                    <div class="form-item">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data">
                     </div>
-                </nav>     
-                <div>
-                    Data: 
-                    <input type="date" name="data" maxlength="10">
-                </div>
-                <div>       
-                    Tipo:
-                    <input type="radio" name="opcTipo" value="Entrada"> Entrada
-                    <input type="radio" name="opcTipo" value="Saída"> Saída
-                </div>
-                <div>
-                    Valor: <input type="number" name="valor" maxlength="15">
-                </div>
-                <div>
-                    Histórico: <input type="text" name="historico" maxlength="150">
-                </div>
-                <div>
-                    Cheque:
-                    <select name="cheque">
-                        <option>Sim</option>
-                        <option>Não</option>
-                    </select>
-                </div>
-                <input type="submit" value="Enviar">
-            </form>
+                    <div class="form-item content-tipo">
+                        <label for="tipo">Tipo:</label>
+                        <input type="radio" name="opcTipo" value="Entrada">Entrada<br>
+                        <input type="radio" name="opcTipo" value="Saída">Saída<br>
+                    </div>
+                    <div class="form-item">
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" name="valor" placeholder="Digite o valor">
+                    </div>
+                    <div class="form-item">
+                        <label for="historico">Histórico:</label>
+                        <input type="text" name="historico" maxlength="150">
+                    </div>
+                    <div class="form-item">
+                        <label for="cheque">Cheque:</label>
+                        <select name="cheque">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <input type="file" id="foto" name="foto" accept="image/*" />
+                    </div> 
+                    <div class="form-item">
+                        <input id="btn" type="submit" value="Enviar" >
+                    </div>
+                </form>
+            </div>
         </body>
     </html>
