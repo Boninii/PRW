@@ -17,6 +17,8 @@ create table fluxo_caixa(
     valor decimal(10,2) not null,
 	historico varchar (150) not null,	
     cheque varchar(3)  not null, 
+    foto_blob blob,
+	foto_nome varchar(100),
     primary key (id)
 );
 

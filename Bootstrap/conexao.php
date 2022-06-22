@@ -1,6 +1,6 @@
 <?php
     $hostname = "localhost";
-    $port = 3306;//COLOCAR 3307, NA ESCOLA
+    $port = 3307;//COLOCAR 3307, NA ESCOLA E 3306, EM CASA
     $username = "root";
     $password = "";
     $database = "bootstrap";

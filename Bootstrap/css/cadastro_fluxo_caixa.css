@@ -68,12 +68,6 @@ label[for="tipo"]
     right: 23%;
 }
 
-input[type="file"]
-{
-    position: relative;
-    right: 13px;
-}
-
 .content-tipo
 {
     width: 30%;
@@ -98,11 +92,6 @@ a input#btn
 {
     position: relative;
     left: 150px;
-}
-
-#btn:hover
-{
-    background-color: rgb(118, 212, 197);
 }
 
 .form_item
