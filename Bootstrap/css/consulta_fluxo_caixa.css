@@ -7,21 +7,18 @@
     padding: 0;
 }
 
-table
-{
-    margin: 0 auto;
-    position: relative;
-    top: -10px;
-}
-
-tr td
-{
-    text-align: center;
-}
-
-p#listagem
+p#consulta
 {
     font-family: 'Questrial', sans-serif;
     font-size: 30px;
+    text-align: center;
+}
+
+.container-tipo
+{
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
     text-align: center;
 }

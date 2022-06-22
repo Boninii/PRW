@@ -60,18 +60,19 @@
                     </form>-->
                 </div>
             </nav>
-            <br>     
+            <p id="listagem">Listagem</p>
             <table align="center" border="1">
                 <!--LInha-->
                 <tr align="center">
                     <!--Table-->
                     <th>Foto</th>
                     <th>Código</th>
-                    <th>Data</th>
+                    <th>Nome</th>
                     <th>Tipo</th> 
                     <th>Valor</th>
                     <th>Histórico</th>
                     <th>Cheque</th>
+                    <th>Data</th>
                     <th>Excluir</th>
                 </tr>
                 <?php
@@ -82,11 +83,12 @@
                         "' width='150' height='150'/></td>";
                         echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>"
                             .$row['id']."</a></td>";
-                        echo "<td>".$row['data']."</td>";
+                        echo "<td>".$row['nome']."</td>";
                         echo "<td>".$row['tipo']."</td>";
                         echo "<td>"."R$".$row['valor']."</td>";
                         echo "<td>".$row['historico']."</td>";
                         echo "<td>".$row['cheque']."</td>";
+                        echo "<td>".$row['data']."</td>";
                         echo "<td><a href='excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a></td>";
                         echo "</tr>";
                     }

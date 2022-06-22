@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 *
 {
     box-sizing: border-box;
@@ -5,15 +7,12 @@
     padding: 0;
 }
 
-html 
-{
-    font-family: "Lucida Sans", sans-serif;
-}
-
 #teste 
 {
     width: 40%;
-    margin: 0 auto;
+    margin: 0px auto;
+    position: relative;
+    top: -10px;
 }
 
 .form-item
@@ -97,4 +96,11 @@ a input#btn
 .form_item
 {
     margin: 0 auto;
+}
+
+p#cadastro
+{
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    text-align: center;
 }

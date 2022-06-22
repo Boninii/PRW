@@ -23,19 +23,22 @@
     }
 
     $data = $_POST['data'];
+    $nome = $_POST['nome'];
     $tipo = $_POST['opcTipo'];
     $valor = $_POST['valor'];
     $historico = $_POST['historico'];
     $cheque = $_POST['cheque'];
 
     echo "Data: ".$data."<br>"
+    ."Nome: ".$nome."<br>"
     ."Tipo: ".$tipo."<br>"
     ."Valor: ".$valor."<br>"
     ."Histórico: ".$historico."<br>"
-    ."Cheque: ".$cheque;
+    ."Cheque: ".$cheque."<br>"
+    ."Foto: <br><img src='upload/$fotoNome' width=100>";
 
-    $sql = "INSERT INTO  fluxo_caixa (data, tipo, valor, historico, cheque, foto_blob, foto_nome)
-                VALUES ('".$data."', '".$tipo."', '".$valor."', '".$historico."', '".$cheque."', '".$fotoBlob."', '".$fotoNome."')";
+    $sql = "INSERT INTO  fluxo_caixa (data, nome, tipo, valor, historico, cheque, foto_blob, foto_nome)
+                VALUES ('".$data."', '".$nome."', '".$tipo."', '".$valor."', '".$historico."', '".$cheque."', '".$fotoBlob."', '".$fotoNome."')";
 
     $result = mysqli_query($con, $sql);
 
