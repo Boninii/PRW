@@ -47,5 +47,6 @@
                     </form>-->
                 </div>
             </nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnVGKk_1H_F3TPzrTybzjqfejX521BbvrbHw&usqp=CAU" alt="Ribamar - The biggest one" title="Ribamar - The biggest one">
         </body>
     </html>
