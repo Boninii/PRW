@@ -23,5 +23,5 @@
     $row = mysqli_fetch_array($result);
     echo "Valor: R$".($row['valor']) ;
 ?>
-    
+<!-- Teste -->
 <br><br><a href="index.php">Voltar</a>

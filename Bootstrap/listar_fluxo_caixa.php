@@ -65,33 +65,33 @@
                 <!--LInha-->
                 <tr align="center">
                     <!--Table-->
+                    <th>Foto</th>
                     <th>Código</th>
                     <th>Data</th>
                     <th>Tipo</th> 
                     <th>Valor</th>
                     <th>Histórico</th>
                     <th>Cheque</th>
-                    <th>Foto</th>
                     <th>Excluir</th>
                 </tr>
                 <?php
                     while($row = mysqli_fetch_array($result))
                     {
                         echo "<tr>";
+                        echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] ).
+                        "' width='150' height='150'/></td>";
                         echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>"
                             .$row['id']."</a></td>";
                         echo "<td>".$row['data']."</td>";
                         echo "<td>".$row['tipo']."</td>";
-                        echo "<td>".$row['valor']."</td>";
+                        echo "<td>"."R$".$row['valor']."</td>";
                         echo "<td>".$row['historico']."</td>";
                         echo "<td>".$row['cheque']."</td>";
-                        echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] ).
-                        "' width='150' height='150'/></td>";
                         echo "<td><a href='excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a></td>";
                         echo "</tr>";
                     }
                 ?>
-                <td colspan="8" style="text-align: center;"><a href='index.php'>Voltar</a></td>
+                <td colspan="9" style="text-align: center;"><a href='index.php'>Voltar</a></td>
             </table>
         </body>
     </html>

@@ -43,6 +43,9 @@
                     <option <?php if($row['cheque'] == "Não")  echo "selected";?>>Não</option>
                 </select>
             </div>
+            <div>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
             <input type="submit" value="Enviar!">
             <input name="id" type="hidden" value="<?php echo $row['id']?>">
         </form>
