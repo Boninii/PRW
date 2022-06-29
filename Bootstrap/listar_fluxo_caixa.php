@@ -61,7 +61,7 @@
                 </div>
             </nav>
             <p id="listagem">Listagem</p>
-            <table align="center" border="1">
+            <table align="center" border="1" width="70%">
                 <!--LInha-->
                 <tr align="center">
                     <!--Table-->
@@ -93,7 +93,9 @@
                         echo "</tr>";
                     }
                 ?>
-                <td colspan="9" style="text-align: center;"><a href='index.php'>Voltar</a></td>
+                <td colspan="9" style="text-align: center;">
+                    <a href='index.php'>Voltar</a>
+                </td>
             </table>
         </body>
     </html>

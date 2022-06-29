@@ -7,17 +7,20 @@
     padding: 0;
 }
 
-#teste 
+#container-2
 {
     width: 40%;
     margin: 0px auto;
     position: relative;
     top: -10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    padding: 10px;
 }
 
 .form-item
 {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     display: flex;    
     align-items: center;
@@ -25,7 +28,7 @@
     width: 100%;
 }
 
-#teste div label 
+#container-2 div label 
 {
     width: 20%;
     height: 30px;
@@ -38,16 +41,35 @@
 input[type="date"]
 {
     width: 100%;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    color: #757575;
+    padding-left: 6px;
 }
 
 input[type="number"]
 {
     width: 100%;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    padding-left: 6px;
 }
 
 input[type="text"]
 {
     width: 100%;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 5px; 
+    padding-left: 6px;
+}
+
+select[name="cheque"]
+{
+    border: 1px solid #ced4da;
+    color: #757575;
 }
 
 input[type="radio"]
@@ -74,17 +96,22 @@ label[for="tipo"]
     left: 14%;
 }
 
-#teste div input 
+#container-2 div input 
 {
     display: block;
     width: 80%;
     float: left;
 }
 
-#teste div #btn 
+#container-2 div #btn 
 {
     width: 100px;
+    padding: 2px;
     margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #9a9fa3;
+    border-radius: 5px; 
+    cursor: pointer;    
 }
 
 a input#btn

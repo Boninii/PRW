@@ -36,6 +36,14 @@
     ."Histórico: ".$historico."<br>"
     ."Cheque: ".$cheque."<br>"
     ."Foto: <br><img src='upload/$fotoNome' width=100>";
+    if(isset($fotoBlob))
+    {
+        echo "Essa variável existe!";
+    }
+    else
+    {
+        echo "Essa variavél não existe!";
+    }
 
     $sql = "INSERT INTO  fluxo_caixa (data, nome, tipo, valor, historico, cheque, foto_blob, foto_nome)
                 VALUES ('".$data."', '".$nome."', '".$tipo."', '".$valor."', '".$historico."', '".$cheque."', '".$fotoBlob."', '".$fotoNome."')";

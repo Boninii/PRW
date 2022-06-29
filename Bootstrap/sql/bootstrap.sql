@@ -1,6 +1,6 @@
 -- Drop banco de dados
 -- drop database bootstrap;
-/*
+
 -- Criação do banco de dados 
 create database bootstrap;
 
@@ -22,5 +22,5 @@ create table fluxo_caixa(
 	foto_nome varchar(100),
     primary key (id)
 );
-*/
-select * from fluxo_caixa;
+
+-- select * from fluxo_caixa;
